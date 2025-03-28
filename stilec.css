@@ -1,0 +1,156 @@
+/* Estilos específicos para a página de serviços */
+.services-main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    width: 80px;
+    height: 70px;
+    background-color: #f0f8ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+}
+
+.service-icon i {
+    font-size: 2rem;
+    color: #3498db;
+}
+
+.service-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.service-card p {
+    color: #7f8c8d;
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.payment-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.payment-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Modal PIX */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #7f8c8d;
+}
+
+.modal-content h3 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.pix-info {
+    text-align: center;
+}
+
+.pix-info p {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.qrcode {
+    max-width: 200px;
+    margin: 1rem auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .service-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .modal-content {
+        padding: 1.5rem;
+    }
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossos Serviços - AcadHelper</title>
+    <link rel="stylesheet" href="stilec.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <body bgcolor="blue ice"> 
+    <header>
+        <div class="logo">
+            <h2>Acad<span>Helper</span></h2>
+        </div>
+        <nav>
+            <ul>
+                <strong><a href="index.html">VOLTAR</a></strong><br>
+                <strong><a href="servicos.html" class="active">SERVIÇOS</a></strong><br>
+                <strong><a href="contato.html"> CONTATO</a></strong>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="services-main">
+        <h2 class="section-title">Nossos Serviços Acadêmicos</h2>
+        
+        <div class="service-cards">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>TCC Completo</h3>
+                <p>Trabalho de Conclusão de Curso,slides para apresentação, desde o projeto até a versão final</p>
+                <p class="price">A partir de R$ 150,00</p>
+                <button class="payment-btn" onclick="showPixModal()">Contratar</button>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-book"></i>
+                </div>
+                <h3>Monografias</h3>
+                <p>Elaboração de monografias com pesquisa acadêmica rigorosa</p>
+                <p class="price">A partir de R$ 150,00</p>
+                <button class="payment-btn" onclick="showPixModal()">Contratar</button>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-file-contract"></i>
+                </div>
+                <h3>Relatórios de Estágio</h3>
+                <p>Relatórios completos seguindo as normas ABNT e da sua instituição</p>
+                <p class="price">A partir de R$ 100,00</p>
+                <button class="payment-btn" onclick="showPixModal()">Contratar</button>
+            </div>
+
+        </div>
+
+        <!-- Modal PIX -->
+        <div id="pixModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="hidePixModal()">&times;</span>
+                <h3>Pagamento via PIX</h3>
+                <div class="pix-info">
+                    <p>Chave PIX (CPF): 015.235.326-70</p>
+                    <p>Nome: Patricio Figueredo Santos</p>
+                    <p>Banco: Banco Itaú</p>
+                    <img src="imageqrcode.jpg" alt="QR Code PIX" class="qrcode">
+                    <p>Após o pagamento, envie o comprovante para whatssap:(32)988543619</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;AcadHelper.Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

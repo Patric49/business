@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - AcadHelper</title>
+    
+    <link rel="stylesheet" href="stileb.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <body bgcolor="blue ice"> 
+    <header>
+        <div class="logo">
+            <h2>Acad<span>Helper</span></h2>
+        </div>
+        <nav>
+            <ul>
+                <strong><a href="index.html">VOLTAR</a></strong><br>
+                <strong><a href="servicos.html">SERVIÇOS</a></strong><br>
+                <strong><a href="contato.html" class="active"> CONTATO</a></strong>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contact-main">
+        <section class="contact-section">
+            <h2>Entre em Contato</h2>
+            <p>Tem dúvidas ou precisa de um orçamento? Envie sua mensagem!</p>
+            
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="service">Serviço de interesse:</label>
+                    <select id="service" name="service">
+                        <option value="tcc">TCC</option>
+                        <option value="monografia">Monografia</option>
+                        <option value="relatorio">Relatório de Estágio</option>
+                        <option value="apresentacao">Apresentação PowerPoint</option>
+                    
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Enviar Mensagem</button>
+            </form>
+        </section>
+        
+        <section class="info-section">
+            <div class="info-card">
+                <i class="fas fa-envelope"></i>
+                <h3>E-mail</h3>
+                <p>patricio.figueredo04@gmail.com</p>
+            </div>
+            
+            <div class="info-card">
+                <i class="fas fa-phone"></i>
+                <h3>Telefone</h3>
+                <p>(32) 98854-3619</p>
+            </div>
+            
+            <div class="info-card">
+                <i class="fas fa-clock"></i>
+                <h3>Horário de Atendimento</h3>
+                <p>Segunda a Sexta: 10h às 18h</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AcadHelper. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
